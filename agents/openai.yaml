@@ -1,0 +1,11 @@
+interface:
+  display_name: "CV Mailer"
+  short_description: "Draft, approve, send, and verify resume emails safely"
+  default_prompt: "Use $cv-mailer to draft a tailored job-application email and show me the exact unsent version for approval."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "mail"
+      description: "Mail MCP server for account discovery, drafts, sending, and Sent-folder verification"
+policy:
+  allow_implicit_invocation: true
